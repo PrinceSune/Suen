@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        nav {
+            float: right;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        nav li {
+            float: left;
+            margin: 20px;
+        }
+
+        nav li a {
+            font-size: 13px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .banner {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 500px;
+            background-image: url('images/cover-1.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topNavBar clearfix" style="background-color: black;">
+        <img src="" alt="logo" class="logo">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="">我的</a></li>
+                <li><a href="">技能树</a></li>
+                <li><a href="">项目经历</a></li>
+                <li><a href="">项目演示</a></li>
+                <li><a href="">我的博客</a></li>
+                <li><a href="">下载pdf简历</a></li>
+                <li><a href="">联系我</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- <div class="banner">
+
+    </div> -->
+    <main>
+        <div>
+            <div>
+                <div class="photos"></div>
+                <div class="myInform">
+                    <div class="hellow">你好</div>
+                    <h1>我是孙望智</h1>
+                    <h2>一名前端开发工程师</h2>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>21</dd>
+                        <dt>性别</dt>
+                        <dd>男</dd>
+                        <dt>学历</dt>
+                        <dd>重庆工商大学融智学院（本科）</dd>
+                        <dt>毕业时间</dt>
+                        <dd>2021.6</dd>
+                        <dt>邮箱</dt>
+                        <dd>1467820831@qq.com</dd>
+                        <dt>手机</dt>
+                        <dd>15683852068</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="mediaLink">
+                <a href=""><img src="" alt="QQ"></a>
+                <a href=""><img src="" alt="微信"></a>
+                <a href=""><img src="" alt="知乎"></a>
+                <a href=""><img src="" alt="CSDN"></a>
+                <a href=""><img src="" alt="掘金"></a>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
